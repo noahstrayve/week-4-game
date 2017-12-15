@@ -1,0 +1,55 @@
+body {
+	background-image: url(wormz.png);
+}
+
+.gameTitleBox {
+	background: green;
+	width: 700px;
+
+}
+
+.titleText {
+	
+}
+
+.instructionsBox {
+	background: green;
+	width: 700px;
+
+}
+
+.conditionTrackerBox {
+	background: green;
+	width: 700px;
+
+}
+
+.winLossCounterBox {
+	background: green;
+	width: 700px;
+
+}
+
+.imageHolderBox {
+	background: green;
+	display: inline-block;
+	width: 700px;
+
+}
+
+.totalTrackerBox {
+	background: green;
+	width: 700px;
+
+}
+
+.crystal {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 30px; 
+	margin-left: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
