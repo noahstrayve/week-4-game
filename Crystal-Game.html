@@ -2,88 +2,93 @@
 
 <html>
 
-<head>
-	<title>Crystal Game</title>
+	<head>
+		<title>Crystal Game</title>
 
-	<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css">
 
-</head>
+	</head>
 
-<body>
+	<body>
 
-	<div class="gameTitleBox">
+		<div class="gameTitleBox">
 
-		<h1 class="titleText">Crystal Grabber</h1>
+			<h1 class="titleText">Crystal Grabber</h1>
 		
-	</div>
-
-	<div class="instructionsBox">
-
-		<p class="ruleText">Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. </p>
-
-		<p class="ruleText">Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. </p>
-
-		<p class="ruleText">Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. </p>
-
-		<p class="ruleText">Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. </p>
-		
-	</div>
-
-	<div class="conditionTrackerBox">
-		
-		<p>You must match this number to win: </p>
-		
-		<h2 class="conditionTrackerNumber"></h2>
-		
-	</div>
-
-	<div class="winLossCounterBox">
-
-		<P class="winCounter">Total Wins: </P>
-
-		<P class="lossCounter">Total Losses: </P>		
-
-	</div>
-
-	<div class="imageHolderBox">
-
-		<div class="crystalOne">
-		
-			<img class="crystal" src="yellow-crystal.png">
-	
 		</div>
 
-		<div class="crystalTwo">
-		
-			<img class="crystal" src="red-crystal.png">
+		<div class="instructionsBox">
 	
+			<p class="ruleText">Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. </p>
+
+			<p class="ruleText">Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. </p>
+
+			<p class="ruleText">Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. </p>
+
+			<p class="ruleText">Rules rules rules rules rules rules. Rules rules rules rules rules rules. Rules rules rules rules rules rules. </p>
+		
 		</div>
 
-		<div class="crystalThree">
+		<div class="conditionTrackerBox">
 		
-			<img class="crystal" src="green-gem.png">
-	
+			<p>You must match this number to win: </p>
+		
+			<span id="winCondition"></span>
+		
 		</div>
 
-		<div class="crystalFour">
-		
-			<img class="crystal" src="blue-crystal.png">
-	
+		<div class="winLossCounterBox">
+
+			<p class="winCounter">Total Wins: </p>
+
+			<span id="win"></span>
+
+			<p class="lossCounter">Total Losses: </p>
+
+			<span id="loss"></span>		
+
 		</div>
 
-	</div>
+		<div class="imageHolderBox">
 
-	<div class="totalTrackerBox">
-
-		<p class="totalPresenter">Your current total is: </p>
-
-		<h2 class= totalTrackerNumber></h2>
+			<div class="crystalOne">
 		
-	</div>
+				<img class="crystal" src="yellow-crystal.png">
+	
+			</div>
 
+			<div class="crystalTwo">
+		
+				<img class="crystal" src="red-crystal.png">
+	
+			</div>
 
-<script type="text/javascript"></script>
+			<div class="crystalThree">
+		
+				<img class="crystal" src="green-gem.png">
+	
+			</div>
 
-</body>
+			<div class="crystalFour">
+		
+				<img class="crystal" src="blue-crystal.png">
+	
+			</div>
+
+		</div>
+
+		<div class="totalTrackerBox">
+
+			<p class="totalPresenter">Your current total is: </p>
+
+			<span id="tracker"></span>
+		
+		</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript"></script>
+
+	</body>
 
 </html>
