@@ -47,25 +47,25 @@
 
 		<div class="imageHolderBox">
 
-			<div class="crystalOne" onclick="numberOne()">
+			<div class="crystalOne">
 		
 				<img class="crystal" src="yellow-crystal.png">
 	
 			</div>
 
-			<div class="crystalTwo" onclick="numberTwo()">
+			<div class="crystalTwo"">
 		
 				<img class="crystal" src="red-crystal.png">
 	
 			</div>
 
-			<div class="crystalThree" onclick="numberThree()">
+			<div class="crystalThree"">
 		
 				<img class="crystal" src="green-gem.png">
 	
 			</div>
 
-			<div class="crystalFour" onclick="numberFour()" ">
+			<div class="crystalFour"">
 		
 				<img class="crystal" src="blue-crystal.png">
 	
@@ -80,15 +80,11 @@
 		</div>
 
 	<script type="text/javascript">
-		var randomNumberOne = Math.floor(Math.random() * 12 + 1);
-		var randomNumberTwo = Math.floor(Math.random() * 12 + 1);
-		var randomNumberThree = Math.floor(Math.random() * 12 + 1);
-		var randomNumberFour = Math.floor(Math.random() * 12 + 1);
 
 		var randomNumberGoal = Math.floor(Math.random() * 102 + 19);
 
-		var countingUp = [15, 15,  10, 10]
-		var datNumber = 150
+		var countingUp = []
+		var datNumber = 5
 
 		var winner = 0
 		var loser = 0
@@ -101,32 +97,34 @@
 		document.getElementById("win").innerHTML = winner
 		document.getElementById("loss").innerHTML = loser
 
-
-		function numberOne() {
+		$("#crystalOne").on("click", function() {
+			var randomNumberOne = Math.floor(Math.random() * 12 + 1);
 			alert(randomNumberOne)
 			countingUp.push(randomNumberOne)
 			alert("Your current total is " + datNumber)
-		}
-
-		function numberTwo() {
+		});
+		
+		$("#crystalTwo").on("click", function() {
+			var randomNumberTwo = Math.floor(Math.random() * 12 + 1);
 			alert(randomNumberTwo)
 			countingUp.push(randomNumberTwo)
 			alert("Your current total is " + datNumber)
-		}
+		});
+		
+		$("#crystalThree").on("click", function() {
+			var randomNumberThree = Math.floor(Math.random() * 12 + 1);
+			alert(randomNumberThree);
+			countingUp.push(randomNumberThree);
+			alert("Your current total is " + datNumber);
+		});
+		
+		$("#crystalFour").on("click", function() {
+			var randomNumberFour = Math.floor(Math.random() * 12 + 1);
+			alert(randomNumberFour);
+			countingUp.push(randomNumberFour);
+			alert(" Your current total is " + datNumber);
+		});
 
-		function numberThree() {
-			alert(randomNumberThree)
-			countingUp.push(randomNumberThree)
-			alert("Your current total is " + datNumber)
-		}
-
-		function numberFour() {
-			alert(randomNumberFour)
-			countingUp.push(randomNumberFour)
-			alert("Your current total is " + datNumber)
-		}
-
-		function restartGame() {}
 
 		if (datNumber === randomNumberGoal) {
 			alert("YOU WIN!!!!!!!")
