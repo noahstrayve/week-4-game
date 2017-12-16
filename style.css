@@ -5,38 +5,68 @@ body {
 .gameTitleBox {
 	background: green;
 	width: 700px;
-
+	border-width: 2px;
+	border-style: solid;
+	border-color: grey;
+	margin-left: 100px;
+	float: left;
+	margin-top: 10px;
 }
 
 .instructionsBox {
 	background: green;
 	width: 700px;
-
+	border-width: 2px;
+	border-style: solid;
+	border-color: grey;
+	margin-left: 100px;
+	float: left;
+	margin-top: 10px;
 }
 
 .conditionTrackerBox {
 	background: green;
 	width: 700px;
-
+	border-width: 2px;
+	border-style: solid;
+	border-color: grey;
+	margin-left: 100px;
+	float: left;
+	margin-top: 10px;
 }
 
 .winLossCounterBox {
 	background: green;
 	width: 700px;
-
+	border-width: 2px;
+	border-style: solid;
+	border-color: grey;
+	margin-left: 100px;
+	float: left;
+	margin-top: 10px;
 }
 
 .imageHolderBox {
 	background: green;
 	display: inline-block;
 	width: 700px;
-
+	border-width: 1px;
+	border-style: solid;
+	border-color: grey;
+	margin-left: 100px;
+	float: left;
+	margin-top: 10px;
 }
 
 .totalTrackerBox {
 	background: green;
 	width: 700px;
-
+	border-width: 2px;
+	border-style: solid;
+	border-color: grey;
+	margin-left: 100px;
+	float: left;
+	margin-top: 10px;
 }
 
 .crystal {
