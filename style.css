@@ -2,52 +2,19 @@ body {
 	background-image: url(wormz.png);
 }
 
-.gameTitleBox {
-	background: green;
+.box {
+	background: lavender;
 	width: 700px;
-	border-width: 2px;
+	border-width: 1px;
 	border-style: solid;
 	border-color: grey;
 	margin-left: 100px;
 	float: left;
-	margin-top: 10px;
-}
-
-.instructionsBox {
-	background: green;
-	width: 700px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: grey;
-	margin-left: 100px;
-	float: left;
-	margin-top: 10px;
-}
-
-.conditionTrackerBox {
-	background: green;
-	width: 700px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: grey;
-	margin-left: 100px;
-	float: left;
-	margin-top: 10px;
-}
-
-.winLossCounterBox {
-	background: green;
-	width: 700px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: grey;
-	margin-left: 100px;
-	float: left;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .imageHolderBox {
-	background: green;
+	background: lavender;
 	display: inline-block;
 	width: 700px;
 	border-width: 1px;
@@ -55,18 +22,7 @@ body {
 	border-color: grey;
 	margin-left: 100px;
 	float: left;
-	margin-top: 10px;
-}
-
-.totalTrackerBox {
-	background: green;
-	width: 700px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: grey;
-	margin-left: 100px;
-	float: left;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .crystal {
@@ -78,4 +34,13 @@ body {
 	margin-top: 20px;
 	margin-bottom: 20px;
 
+}
+
+p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h1 {
+	margin-left: 20px;
 }
