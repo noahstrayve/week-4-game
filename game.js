@@ -23,10 +23,10 @@ $(document).ready(function(){
 	document.getElementById("win").innerHTML = winner
 	document.getElementById("loss").innerHTML = loser
 
+	
+
 	$(".crystalOne").on("click", function() {
 		
-		alert(randomNumberOne)
-
 		countingUp = []
 			
 		countingUp.push(randomNumberOne)
@@ -54,12 +54,11 @@ $(document).ready(function(){
 			restartGameLose()
 	
 		}
+		
 	});
 		
 	$(".crystalTwo").on("click", function() {
 	
-		alert(randomNumberTwo)
-
 		countingUp = []
 			
 		countingUp.push(randomNumberTwo)
@@ -87,12 +86,11 @@ $(document).ready(function(){
 			restartGameLose()
 	
 		}
+
 	});
 		
 	$(".crystalThree").on("click", function() {
 	
-		alert(randomNumberThree)
-
 		countingUp = []
 			
 		countingUp.push(randomNumberThree)
@@ -120,12 +118,11 @@ $(document).ready(function(){
 			restartGameLose()
 	
 		} 
+
 	});
 		
 	$(".crystalFour").on("click", function() {
 	
-		alert(randomNumberFour)
-
 		countingUp = []
 			
 		countingUp.push(randomNumberFour)
@@ -133,11 +130,11 @@ $(document).ready(function(){
 		for (var i = 0; i< countingUp.length; i++) {
 		
 			datNumber += countingUp[i];
-	
+
 		}
-			
+	
 		alert("Your have " + datNumber + " gems!")
-			
+	
 		if (datNumber === randomNumberGoal) {
 		
 			alert("YOU WIN!!!!!!!")
@@ -152,33 +149,50 @@ $(document).ready(function(){
 		
 			restartGameLose()
 	
-		} 
+		}
+
 	});	
 
 	function restartGameWin() {
+		
 		winner++
+		
 		document.getElementById("win").innerHTML = winner
+		
 		datNumber = 0
+		
 		countingUp = []
-		randomNumberOne = Math.floor(Math.random() * 12 + 1);
-		randomNumberTwo = Math.floor(Math.random() * 12 + 1);
-		randomNumberThree = Math.floor(Math.random() * 12 + 1);
+		
+		randomNumberOne = Math.floor(Math.random() * 12 + 1);		
+		randomNumberTwo = Math.floor(Math.random() * 12 + 1);		
+		randomNumberThree = Math.floor(Math.random() * 12 + 1);		
 		randomNumberFour = Math.floor(Math.random() * 12 + 1);
+		
 		randomNumberGoal = Math.floor(Math.random() * 102 + 19);
+
 		document.getElementById("winCondition").innerHTML = randomNumberGoal
+	
 	}	
 
 	function restartGameLose() {
-		loser = loser + ratio
+		
+		loser++
+		
 		document.getElementById("loss").innerHTML = loser	
+		
 		datNumber = 0
+		
 		countingUp = []
+		
 		randomNumberOne = Math.floor(Math.random() * 12 + 1);
 		randomNumberTwo = Math.floor(Math.random() * 12 + 1);
 		randomNumberThree = Math.floor(Math.random() * 12 + 1);
 		randomNumberFour = Math.floor(Math.random() * 12 + 1);
+		
 		randomNumberGoal = Math.floor(Math.random() * 102 + 19);
+
 		document.getElementById("winCondition").innerHTML = randomNumberGoal
+		
 	}
 
 });
