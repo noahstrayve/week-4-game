@@ -23,6 +23,40 @@ document.getElementById("loss").innerHTML = loser
 document.getElementById("tracker").innerHTML = track
 
 
+
+
+$("#crystalOne").on("click", function() {
+	
+	countingUp.push(randomNumberOne)
+	
+	alert("Your current total is " + datNumber)
+
+});
+		
+$("#crystalTwo").on("click", function() {
+	
+	countingUp.push(randomNumberTwo)
+	
+	alert("Your current total is " + datNumber)
+
+});
+		
+$("#crystalThree").on("click", function() {
+	
+	countingUp.push(randomNumberThree);
+	
+	alert("Your current total is " + datNumber);
+
+});
+		
+$("#crystalFour").on("click", function() {
+	
+	countingUp.push(randomNumberFour);
+	
+	alert(" Your current total is " + datNumber);
+
+});	
+
 function restartGameWin() {
 	winner = winner + ratio
 	document.getElementById("win").innerHTML = winner
@@ -58,19 +92,27 @@ function numberOne() {
 	countingUp.push(randomNumberOne)
 			
 	for (var i = 0; i< countingUp.length; i++) {
+		
 		datNumber += countingUp[i];
+	
 	}
 			
 	alert("Your have " + datNumber + " gems!")
 			
 	if (datNumber === randomNumberGoal) {
+		
 		alert("YOU WIN!!!!!!!")
+		
 		restartGameWin()
+	
 	}
 
 	else if (datNumber > randomNumberGoal) {
+		
 		alert("YOU LOSE!!!!!!!")
+		
 		restartGameLose()
+	
 	} 
 }
 
@@ -83,19 +125,27 @@ function numberTwo() {
 	countingUp.push(randomNumberTwo)
 			
 	for (var i = 0; i< countingUp.length; i++) {
+		
 		datNumber += countingUp[i];
+	
 	}
 	
 	alert("Your have " + datNumber + " gems!")
 			
 	if (datNumber === randomNumberGoal) {
+		
 		alert("YOU WIN!!!!!!!")
+		
 		restartGameWin()
+	
 	}
 
 	else if (datNumber > randomNumberGoal) {
+		
 		alert("YOU LOSE!!!!!!!")
+		
 		restartGameLose()
+	
 	} 
 }
 
@@ -108,19 +158,27 @@ function numberThree() {
 	countingUp.push(randomNumberThree)
 			
 	for (var i = 0; i< countingUp.length; i++) {
+		
 		datNumber += countingUp[i];
+	
 	}
 			
 	alert("Your have " + datNumber + " gems!")
 			
 	if (datNumber === randomNumberGoal) {
+		
 		alert("YOU WIN!!!!!!!")
+		
 		restartGameWin()
+	
 	}
 
 	else if (datNumber > randomNumberGoal) {
+		
 		alert("YOU LOSE!!!!!!!")
+		
 		restartGameLose()
+	
 	} 
 }
 
@@ -133,19 +191,27 @@ function numberFour() {
 	countingUp.push(randomNumberFour)
 			
 	for (var i = 0; i< countingUp.length; i++) {
+		
 		datNumber += countingUp[i];
+	
 	}
 			
 	alert("Your have " + datNumber + " gems!")
 			
 	if (datNumber === randomNumberGoal) {
+		
 		alert("YOU WIN!!!!!!!")
+		
 		restartGameWin()
+	
 	}
 
 	else if (datNumber > randomNumberGoal) {
+		
 		alert("YOU LOSE!!!!!!!")
+		
 		restartGameLose()
+	
 	} 
 
-}	
+}
